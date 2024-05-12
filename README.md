@@ -15,6 +15,10 @@ with the same name to choose which you want.
 
 There is also a round button on the screen which accesses your current location and gathers climate details of your location after asking for location permission if not already given.
 
+### Download app
+You can download the APK file [here](https://github.com/Coder481/MapsenseAssignment/releases/download/v1.0/app-debug.apk) to give it a try.
+
+
 ### Some application screenshots
 
 |My Location | Find any city | 
