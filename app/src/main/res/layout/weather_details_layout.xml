@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="18dp"
+    android:background="@drawable/bg_gradient_rounded_corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Here's your weather report!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="City:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+    <TextView
+        android:id="@+id/cityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Bengaluru"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/cityText"
+        app:layout_constraintTop_toTopOf="@id/cityText"
+        app:layout_constraintBottom_toBottomOf="@id/cityText"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Temp:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/cityText"
+        app:layout_constraintTop_toBottomOf="@id/cityText"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/temperatureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10C"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/temperatureText"
+        app:layout_constraintTop_toTopOf="@id/temperatureText"
+        app:layout_constraintBottom_toBottomOf="@id/temperatureText"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Weather:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/temperatureText"
+        app:layout_constraintTop_toBottomOf="@id/temperatureText"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/weatherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Rain"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/weatherText"
+        app:layout_constraintTop_toTopOf="@id/weatherText"
+        app:layout_constraintBottom_toBottomOf="@id/weatherText"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/weatherIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:minWidth="28dp"
+        android:minHeight="28dp"
+        android:layout_marginStart="4dp"
+        tools:src="@drawable/ic_current_location"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toEndOf="@id/weatherTitle"
+        app:layout_constraintTop_toTopOf="@id/weatherTitle"
+        app:layout_constraintBottom_toBottomOf="@id/weatherTitle"/>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Desc:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/weatherText"
+        app:layout_constraintTop_toBottomOf="@id/weatherText"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/descriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Raining"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/descriptionText"
+        app:layout_constraintTop_toTopOf="@id/descriptionText"
+        app:layout_constraintBottom_toBottomOf="@id/descriptionText"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MapsenseAssignment" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorSecondary">@color/secondaryBlue</item>
+    </style>
+
+    <style name="Theme.MapsenseAssignment" parent="Base.Theme.MapsenseAssignment" />
+</resources>
